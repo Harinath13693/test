@@ -1,0 +1,11 @@
+Decode--decode(exp,exp1,result1)---exp==exp1-->true-->result1--->false-->null
+        decode(exp,exp1,result1,result2)---exp==exp1-->true-->result1-->false-->result2
+        decode(exp,exp1,result1,exp2,result2)--exp==exp1-->true-->result1-->false-->exp==exp2-->true-->result2-->false-->null
+
+partition--(aggretion function) over partition(column1,column2....columnN)
+         -- displays aggragation for each row works like group but dispalys for each row
+
+joins--select * from table1 t1
+       join (select a as A,b as B,c as C,d as D from table2 t2,table3 t3 where t2.col=t3.coll  ) as t
+       on t1.colmn=t.a and t1.column=t.b;
+       join of table2 and table3 acts one one table as t
