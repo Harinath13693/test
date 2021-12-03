@@ -12,3 +12,4 @@ $ git config --global user.name "harinath13693"
 $ git commit -m 'Learning advance Sql'
 $ ls
 $ cat Advance_SQL.txt
+$ git push---authorize with broweser or code
