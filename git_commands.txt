@@ -1,0 +1,14 @@
+$ git clone https://github.com/Harinath13693/test.git
+$ ls
+$ cd test
+$ ls
+$ cat README.md
+$ git status
+$ git add Advance_SQL.txt
+$ git status
+$ git commit -m 'Learning advance Sql'
+$ git config --global user.email "harinath13693@gmail.com"
+$ git config --global user.name "harinath13693"
+$ git commit -m 'Learning advance Sql'
+$ ls
+$ cat Advance_SQL.txt
