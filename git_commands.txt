@@ -18,5 +18,10 @@ $ git restore git_commands.txt
 $ git restore --staged git_commands.txt
 $ git log
 $ git revert 936a3aa9babd478eae31ce4b1bc12f3080158750
-
+$ git add .
+$ git commit . -m 'waste'
+$ git log
+:q
+$ git reset ff2de4837d05e86b52de3070f38b3baf48c67789
+$ git restore .
 
