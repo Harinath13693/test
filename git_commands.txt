@@ -1,7 +1,6 @@
 $ git clone https://github.com/Harinath13693/test.git
 $ ls
 $ cd test
-$ ls
 $ cat README.md
 $ git status
 $ git add Advance_SQL.txt
@@ -14,3 +13,10 @@ $ ls
 $ cat Advance_SQL.txt
 $ git push---authorize with broweser or code
 $ git difftool HEAD
+$ git checkout git_commands.txt
+$ git restore git_commands.txt
+$ git restore --staged git_commands.txt
+$ git log
+$ git revert 936a3aa9babd478eae31ce4b1bc12f3080158750
+
+
