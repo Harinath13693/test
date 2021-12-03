@@ -24,4 +24,7 @@ $ git log
 :q
 $ git reset ff2de4837d05e86b52de3070f38b3baf48c67789
 $ git restore .
+$ git branch
+$ git branch dev
+$ git checkout dev
 
