@@ -29,3 +29,6 @@ $ git branch dev
 $ git checkout dev
 $ git push --set-upstream origin dev
 $ git merge dev
+$ git show head
+$ git show e0e9cbe6f2e8d463afe7b72a15bf26d9f712fee7
+$ git show head~2 head~1
