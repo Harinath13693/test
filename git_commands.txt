@@ -29,3 +29,4 @@ $ git branch dev
 $ git checkout dev
 $ git push --set-upstream origin dev
 $ git merge dev
+$ git pull
