@@ -1,0 +1,67 @@
+import pandas as pd
+
+To crate dataframe from csv file
+df=pd.read_csv('path_of_the_file)
+
+To create dataframe from dictionary
+--create a dictionary with various column names as keys 
+--values for columns as list or sequence for values
+df=pd.Dataframe('Name_of_dictionary')
+
+Number rows and columns
+tuple=df.shape()
+Num_of_rows=tuple[0]
+Num_of_columns=tuple[1]
+
+To show dataframe
+df--data_frame_name
+df
+---will display or print all rows
+df.head()
+---displays or print first few(5) rows
+df.head(n)
+---displays or prints first n rows
+df.tail()
+---displays or prints last few(5) rows
+df.tail(n)
+---displays or prints last n rows
+
+Indexing
+df[:] is same as df
+---displays or prints all rows
+df[0:5]
+---displays or prints from 0th to 4th rows excludes 5th row
+
+columns
+df.columns
+--displays all columns in a list
+df.column_name or df['column_name']
+---displays data in the column 'column_name'
+type(df['column_name']
+---panda.core.series
+df[[col_name1,col_name2,...col_namn]]
+---prints n columns with their corresponding data in specified order
+df[column_name].max(),.min(),.mean(),.std()
+--prints max or min or mean or standard deviation for column values
+
+conditional satetments
+df[df.column_name>=val]
+--displays all rows with values grater than or equal ''val' in column_name
+df[column_name][df.conditonal_column==df[condtional].max()]
+--dispalys values for column_name  where max vaule of conditional_column
+df[[column_name1,column_name2,..column_nameN]][condtional statement]
+---displays n columns with their values based on condition
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.html
+--visit for more operations
+
+index
+df.index
+--shows index details
+df.loc['index_value']
+--dispalys all rows with index as index_value
+df.set_index(column_name)
+--creates a new dataframe with index as column_name values
+df.set_index(column_name,inplace='True')
+--modifies same dataframe with index as column_name values
+df.reset_index(inplace='True')

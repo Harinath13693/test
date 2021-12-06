@@ -39,3 +39,4 @@ $ git show head~2 head~1
 detached head
 $ git checkout e1ec2aec39b34c77d2099c6571aa7c4d93ae0e96
 $ git checkout dev
+--.gitignore file
