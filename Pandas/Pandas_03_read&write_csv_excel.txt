@@ -1,0 +1,31 @@
+import pandas pd
+
+Reading from csv
+df=pd.read_csv('path_of_file',header=1,skiprows=1)
+--header helps to read csv from 1st index row(indexing starts from 0)
+  header=None helps to start reading file as values and create number for each column from 0 to n
+
+--skiprows helps to skip row mentioned row number
+--names=[column_names]
+  we can provide column header names 
+--nrows=n(numner)
+  to read n number of rows from file
+--na_values
+  -na_values=[value1,value2,...valuen]
+   Replaces all values with NaN in dataframe
+  -na_values={ column_nam1:[values], column_name2:[valuess],...,column_name3:[valuesss]}
+   Repalces values with NaN for specified column_name
+
+writing to csv
+writing the above dataframe to csv
+df.to_csv('path_file',header=False,index=False,columns=[column_names])
+--header=True(default) or False
+  helps in deciding to  write to csv with header 
+
+--index=True(default) or False
+  helps in deciding to  write to csv with header 
+
+--columns=[column_names]
+  helps to write specified columns into csv from dataframe
+
+

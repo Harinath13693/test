@@ -1,0 +1,20 @@
+There are different ways to create a data frame
+import pandas as pd
+1) Using pd.read_csv()
+df=pd.read_csv('Path_of_csvfile')
+
+2)Using pd.read_excel()
+df=pd.read_excel('path_of_excelfile','sheet_name')
+
+3)using pd.Dataframe() and dicitory
+df=pd.Dataframe(dictionary_name)
+
+4)using pd.Dataframe() and lists of tuples
+df=pd.Dataframe([tup1,tup2,tup3...tupn])
+
+5)using pd.Dataframe() and list of dicitonaries
+df=pd.Dataframe([dict1,dict2,dict3...dictn])
+
+we can create dataframe from various types of files
+refer this page for guidance
+https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html
