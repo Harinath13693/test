@@ -1,0 +1,28 @@
+import pandas as pd 
+Reading excel file to dataframe
+df=pd.read_excel('path_of_file','sheet_name',converters={columnname: function_name})
+--converters
+  helps to call function for each value in the mentioned column
+  converters={columnname1: function_name1,
+              columnname2: function_name2
+              ............
+              columnnameN: function_namen}
+
+Writing into excel file from dataframe
+df.to_excel('Name_excel_file','sheet_name',startrow=m,startcol=n,index=Flase)
+--startrow=m index is from 0
+  start writing from mth row in excel
+--startcol=n index is from 0
+  start writing from nth column in excel
+--index=True(default) or False
+  helps to write index in excel file
+
+wrting two different dataframe into same excel in diffent sheets
+df1,df2 be two datatframes
+
+with pd.ExcelWriter('excel_filename.xlsx') as writer:
+	df1.to_excel(writer,sheet_name='sheet_name1')
+	df2.to_excel(writer,sheet_name='sheet_name2')
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_excel.html
