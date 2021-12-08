@@ -23,7 +23,7 @@ df.to_csv('path_file',header=False,index=False,columns=[column_names])
   helps in deciding to  write to csv with header 
 
 --index=True(default) or False
-  helps in deciding to  write to csv with header 
+  helps in deciding to  write to csv with index 
 
 --columns=[column_names]
   helps to write specified columns into csv from dataframe

@@ -18,3 +18,6 @@ df=pd.Dataframe([dict1,dict2,dict3...dictn])
 we can create dataframe from various types of files
 refer this page for guidance
 https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html
+
+6) df2=df1[0:0]
+--creating a dataframe(df2) from existing dataframe(df1) with same structure(columns) 
