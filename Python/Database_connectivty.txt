@@ -1,0 +1,13 @@
+Connecting to exasol database using sqlalchemy
+
+from sqlalchemy import create_engine
+import pandas as pd
+
+prerequiste: Download and install odbc driver for pyexasol(dsn)
+
+e = create_engine("database://user:password@dsn")
+e.connect()
+r = e.execute("query").fetchall()
+df = pd.DataFrame(r)
+df.to_csv("path_file", index=False)
+

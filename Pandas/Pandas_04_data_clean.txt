@@ -1,0 +1,43 @@
+import pandas as pd
+
+df=pd.read_csv('path_file',parse_dates=[column_name])
+--parse_dates
+  helps to convert to date for specified columns
+
+df.fillna(value,inplace=True)
+--fils all na values with value in dataframe
+
+df.fillna({column_name1:value1,
+           Column_name2: value2,..,
+           Column_namen:valueN} ,inplace=True)
+--fills columns with respective values
+
+df.fillna(method="ffill")
+--na values are filled previous cell data
+df.fillna(method="bfill",axis=columns,limit=1)
+----na values are filled next cell data
+axis=columns
+--copies data horizontally
+limit=1
+--only one cell copies data limit is one
+
+df.interpolate(method=?)
+--uses statatics or mathematical caluclutions based method specified
+
+df.dropna()
+--drops rows which has atleast one na values
+df.dropna(how='all')
+--drops rows which has all na values
+df.dropna(thresh=n)
+--drops rows which doesnt have n non-na values
+
+dt=pd.date_range(date1,date2)
+indx=pd.DatetimeIndex(dt)
+df=df.reindex(indx)
+--
+
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.fillna.html
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.interpolate.html
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.reindex.html
