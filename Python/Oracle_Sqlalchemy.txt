@@ -1,0 +1,18 @@
+import cx_Oracle
+from sqlalchemy import create_engine
+import pandas as pd
+
+dsn=cx_Oracle.makedsn('host',port,service_name='service_Name')
+engine=create_engine('oracle+cx_oracle://user_name:password@dsn')
+#'dialect+driver://user:password@dsn'
+or
+engine=create_engine('oracle+cx_oracle://user_name:password@host:port/?service_name=service')
+#'dialect+driver://user:password@host:port/?service_name=service'
+
+con=engine.connect()
+
+data=con.execute("select * from table_name").fetchall()
+
+df=pd.DataFrame(data)
+df.to_csv('file_name.csv')
+
