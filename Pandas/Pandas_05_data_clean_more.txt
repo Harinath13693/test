@@ -1,0 +1,30 @@
+import pandas as pd
+
+df=pd.read_csv('path_file')
+
+df.replace(value_in_df,new_value)
+--replaces value_in_df with new_value in entire df
+
+df.replace({value1:new_value1,
+            value2:new_value2,...,
+            valuen:new_valuen})
+--replaces multiple values with thier respective values
+
+df.replace([value1,value2...,valuen],new_value)
+--replaces multiple values in df with single value
+
+df.replace({column_name1:value1,
+            column_name2:value2...,
+            column_nameN:valueN},new_value)
+--helps to replace specific value corresponding to specific column with singleValue
+
+df.replace('a-zA-Z','new_value',regex=True)
+---repacles values matching regular expressions with new_value
+
+df.replace({column_name1:regular_exp1,
+            column_name2:regular_exp2,...,
+            column_nameN:regular_expN},new_value,regex=True))
+
+df.replace([value1,value2,...,valueN],
+           [new_value1,new_value2,...new_valueN])
+--helps to replace list of values with list of new values
