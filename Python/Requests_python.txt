@@ -1,0 +1,15 @@
+import Requests
+
+res=Requests.get('url')
+
+res.status_code or res
+--it has status_code in it
+
+res.content
+--it has content 
+
+res.json()
+--it returns response in json format
+
+res.text
+--it returns response in unicode
