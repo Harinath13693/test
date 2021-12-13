@@ -1,0 +1,45 @@
+import pandas as pd
+
+df1=pd.DataFrame({})
+df2=pd.read_csv()
+df=pd.concat([df1,df2],ignore_index=True)
+--helps to create dataframe with index starting from 0
+
+df=pd.concat([df1,df2],keys=[key1,key2])
+--helps to create keys for each dataframe 
+
+df1=pd.DataFrame({},index=[])
+df2=pd.DataFrame({},index=[])
+df=pd.concat(df1,df2,axis=1)
+--concates using respective index
+
+ser=pd.Series([values],name="name")
+df=pd.concat([df1,ser],axis=1)
+--we can concate dataframe with series
+
+--------------------------------------------------------------------------------------------------
+                                       Merge
+--------------------------------------------------------------------------------------------------
+merge helps to join to dataframe on based on columns just as like database joins
+
+pd.merge(df1,df2,on='common_column',how='inner',indicator=True,suffixes=['_x','_y'])
+--on='common_column'
+  The name of the column, which presents on both dataframes join
+--how='inner'
+  type of join needs to specify same as database
+  --inner(default)
+  --outer
+  --left
+  --right
+  --cross
+
+--indicator='True'(default is False)
+  helps to indicate from which dataframe values came 
+--suffixes=['_x','_y']
+  appends to column if its present on both dataframes
+  we can give our own ['_left','_right']
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.merge.html
+
+
+
