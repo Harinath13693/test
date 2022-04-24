@@ -1,0 +1,32 @@
+Portal - lms.intellipaat.com
+
+Login Credentials 
+Email - harinatha.reddy@smarterp.com
+Password - Intel@123
+
+Networking
+
+Nikhil
+
+VPC
+AZ
+IGW
+ROUTER
+NACL
+SECURITY GROUPS
+VPC Peering
+VPC ENPOINTS - GATEWAY , INTERFACE
+site to site VPN
+DIRECT Connect
+
+Samit
+
+Subnet
+routing tables
+Internet gateway - Nating
+NAT Gateway
+VPC Peering -accounts,regions ,not transitive
+Transit gateway(TGW)
+AWS direct connect gateway
+Virtual Private gateways(VGW)
+Virtual interface
