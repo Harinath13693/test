@@ -28,7 +28,4 @@ df.to_csv('path_file',header=False,index=False,columns=[column_names])
 --columns=[column_names]
   helps to write specified columns into csv from dataframe
 
-https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
-https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html
-
 
