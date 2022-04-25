@@ -1,2 +1,4 @@
 # Git
-just started with git and github
+  Git is version control syste. lets begin basics.
+  
+
