@@ -102,6 +102,33 @@
     
     git reflog
     
+### git branch
+    Branches helps to maintain versions, different environments.
+    git branch
+        --displays all branches 
+    git branch -r
+        --displays all branches on remote repository
+    git branch -a
+        --displays all branches on local repository
+    git checkout <branch_name>
+        --switches to specified branch_name
+    git checkout -b <branch_name>
+    git branch <branch_name>
+        --creates new branch with the specifed name on local repository
+    git push --set-upstream origin <branch_name>
+        -- pushes new branch to remote repository
+    git checkout -d <branch_name>
+        -- Deletes branch on local repository
+    git push origin --delete  <branch_name>
+        -- deletes branch on remote repository
+        
+ ### git push
+    Helps push commit local repo to remote repo
+    git push
+        -- pushes all co
+    
+        
+        
     
 
     
