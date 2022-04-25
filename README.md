@@ -125,7 +125,24 @@
  ### git push
     Helps push commit local repo to remote repo
     git push
-        -- pushes all co
+    git push -all origin
+        -- pushes all commits in all branches
+    git push <branch_name>
+    git push origin <branch_name>
+        -- pushes only specifed branch changes to remote repo
+        
+### git fetch
+    Helps to fetch latest version remote repo to local repo but not merges
+    git fetch
+    
+### git merge
+    Helps to merge code between branches and diff versions of same branch
+    git merge branch_name1 branch_name2
+        --merges branch_name2 in branch_name1
+    git merge other_branch
+        --merges other_branch in current branch
+          While mergeing can occur conflicts.
+    
     
         
         
