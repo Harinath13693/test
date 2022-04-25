@@ -74,6 +74,35 @@
       Multiple files 
       $ git restore .
       $ git checkout -- .
+      
+    To move back changes from staging area to working directory
+    git reset head
+    git restore --staged <filename>
+    ex:
+    git restore --staged revision.txt
+    
+    To discard changes from staging area
+    git reset --hard
+    
+    To move changes local repoistory to staging area
+    git reset --soft head~1
+    
+    To discard changes from local repository 
+    git reset --hard head~1
+    
+    To move back to specfic commit
+    git reset 'commit code'
+       --it deletes permanently all the commites after  mentioned commit
+    git revert 'commit code'
+       --it creates one more commit with all previous history of commits
+       
+### git log
+    Helps to show history of commits
+    git log
+    
+    git reflog
+    
+    
 
     
     
