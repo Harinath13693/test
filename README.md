@@ -142,11 +142,21 @@
     git merge other_branch
         --merges other_branch in current branch
           While mergeing can occur conflicts.
+          whenever merge conflicts occurs need to reslove by choosing specfic changes or new changes
+          
+### git pull
+    Helps to fectch data from remote repo and merge in local repo and working directory
+    git pull
+    git pull=git fetch + git merge
     
-    
-        
-        
-    
+### head/difftool
+        head refers most recent commit
+        git show head
+            --shows recent commit
+        git show head~1 head
+            -- shows changes between most recent commit and before that
+        git difftool head~1 head
+            -- shows difference between each file with previous commit 
 
     
     
