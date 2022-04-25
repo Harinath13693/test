@@ -61,6 +61,20 @@
     ex:
     git commit --amend 'single file'
     
+### git reset/restore/checkout
+    Helps to reset at various levels
+    
+    To discard changes in working directory
+      single file
+      $ git checkout -- <filename>
+      $ git restore <filename>
+      ex:
+      $ git restore revision.txt
+    
+      Multiple files 
+      $ git restore .
+      $ git checkout -- .
+
     
     
     
