@@ -1,4 +1,4 @@
 # Git
-  Git is version control syste. lets begin basics.
+    Git is version control syste. lets begin basics.
   
 
