@@ -158,7 +158,36 @@
         git difftool head~1 head
             -- shows difference between each file with previous commit 
 
-    
+### git stash
+    Whenever we switch between branches, working tree has to be clean, which means all changes has to be committed or discarded.
+    If not switching is not allowed, we have to switch forcefully and changes are discarded.
+    Here comes git stash which helps to save changes locally and can use later.
+    we can stash more than 1 time, will store as stack
+    git checkout -f <branch name>
+        --switching branches forcefully
+    git stash
+        -- stashes without a name and comment
+     git stash save 'message'
+        -- stash with a name
+     git stash pop 
+        -- most recent stash stack changes will pop into working directory and deletes in stack
+     git stash pop stash@{n}
+        -- specified stash is poped and deleted in stash stack
+     git stash apply
+        -- it apply recent(top) stash stack and will not deleted in the stack
+     git stash apply stash@{n}
+        -- speficed stash is applied and stash stack is not deleted
+     git stash clear
+        --deletes all stash stack
+     git stash drop stash@{n}
+        --deletes n specified stash
+     git stash show stash@{n}
+        -- shows difference between current commit and stash changes
+     git stash branch <new_branch_name> stash@{n}
+        -- creates new branch new_branch_name and add all changes os stash of specified number.
+        
+     
+      
     
     
     
