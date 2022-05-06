@@ -75,6 +75,9 @@
       $ git restore .
       $ git checkout -- .
       
+      To Remove new files
+      $ git clean -f
+      
     To move back changes from staging area to working directory
     git reset head
     git restore --staged <filename>
