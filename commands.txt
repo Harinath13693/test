@@ -1,0 +1,6 @@
+we are using git init to track the git
+git init
+git add
+git commit
+git remote add
+git push
